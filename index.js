@@ -7,17 +7,16 @@ var subscriber2 = new Subscriber('Second Subscriber');
 var subscriber3 = new Subscriber('Third Subscriber');
 
 console.log('Adding the first and the second subscribers to the publisher.');
-publisher.subscribe(subscriber1);
-publisher.subscribe(subscriber2);
+// Add subscriber1 and subscriber2 to teh publisher
 
 console.log('Notifying subscribers.');
 publisher.notify('Sequence initiated.');
 
 console.log('Removing the first subscriber.');
-publisher.unsubscribe(subscriber1);
+// Remove subscriber 1
 
 console.log('Adding the third subscriber.');
-publisher.subscribe(subscriber3);
+// Add subscriber3
 
 console.log('Notifying subscribers.');
 publisher.notify('Update received from the server.');
