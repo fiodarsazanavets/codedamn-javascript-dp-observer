@@ -7,7 +7,7 @@ var subscriber2 = new Subscriber('Second Subscriber');
 var subscriber3 = new Subscriber('Third Subscriber');
 
 console.log('Adding the first and the second subscribers to the publisher.');
-// Add subscriber1 and subscriber2 to teh publisher
+// Add subscriber1 and subscriber2 to the publisher
 
 console.log('Notifying subscribers.');
 publisher.notify('Sequence initiated.');
